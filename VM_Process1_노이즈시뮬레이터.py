@@ -88,12 +88,12 @@ class VM_Process1_노이즈시뮬레이터:
 
                 v1 = np.random.normal(0.3, np.sqrt(0.1))
                 v2 = 2 * v1
-                v3 = np.random.uniform(0.6, 0.9)
+                v3 = np.random.uniform(0.7, 0.9)
                 v4 = 3 * v3
                 v5 = np.random.uniform(0, 0.4)
-                v6 = np.random.normal(-0.6, np.sqrt(0.2))
+                v6 = np.random.normal(-0.7, np.sqrt(0.4))
 
-                r = 10
+                r = 13.8
                 v1 = r * v1
                 v2 = r * v2
                 v3 = r * v3
@@ -115,8 +115,8 @@ class VM_Process1_노이즈시뮬레이터:
                 #d = np.array([[0.14, 0], [0.07, 0]])
                 #d_chg = self.d
                 d = 1 * d
-                # e1 = np.random.normal(-1, np.sqrt(0.1))
-                # e2 = np.random.normal(-1, np.sqrt(0.1))
+                # e1 = np.random.normal(0, np.sqrt(0.3))
+                # e2 = np.random.normal(0, np.sqrt(0.3))
                 # e = np.array([e1, e2])
 
         y = u.dot(A) + v.dot(C) + np.sum(eta_k * d, axis=0) + e
