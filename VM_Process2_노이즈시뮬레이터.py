@@ -93,7 +93,7 @@ class VM_Process2_노이즈시뮬레이터:
                 v4 = 3 * v3
                 v5 = np.random.uniform(0, 0.4)
 
-                r = 2
+                r = 3
                 v1 = r * v1
                 v2 = r * v2
                 v3 = r * v3
@@ -204,7 +204,7 @@ class VM_Process2_노이즈시뮬레이터:
 
         print("Init DoE VM Mean squared error: %.4f" % metrics.mean_squared_error(y_act[:,1:2], y_prd[:,1:2]))
         print("Init DoE VM r2 score: %.4f" % metrics.r2_score(y_act[:,1:2], y_prd[:,1:2]))
-        print("pls : ", pls.coef_)
+        #print("pls : ", pls.coef_)
 
         self.setDoE_Mean(DoE_Mean)
         self.setPlsWindow(plsWindow)
